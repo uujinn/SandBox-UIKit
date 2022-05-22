@@ -1,13 +1,11 @@
 //
 //  ViewController.swift
-//  SSETest
+//  no-storyboard-setting
 //
-//  Created by 양유진 on 2022/05/18.
+//  Created by 양유진 on 2022/05/22.
 //
 
 import UIKit
-import IKEventSource
-import LDSwiftEventSource
 
 class ViewController: UIViewController {
 

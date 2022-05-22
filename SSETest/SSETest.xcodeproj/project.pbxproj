@@ -13,6 +13,7 @@
 		0AFB69B428353BE20067BBBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB69B228353BE20067BBBC /* Main.storyboard */; };
 		0AFB69B628353BE30067BBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB69B528353BE30067BBBC /* Assets.xcassets */; };
 		0AFB69B928353BE30067BBBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB69B728353BE30067BBBC /* LaunchScreen.storyboard */; };
+		4C0D333A1430DD811401C7C9 /* Pods_SSETest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDFF3503CE38336D4C070C /* Pods_SSETest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0AFB69B528353BE30067BBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFB69B828353BE30067BBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AFB69BA28353BE30067BBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17339C5E6A523A26E37852D6 /* Pods-SSETest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSETest.release.xcconfig"; path = "Target Support Files/Pods-SSETest/Pods-SSETest.release.xcconfig"; sourceTree = "<group>"; };
+		3FDDFF3503CE38336D4C070C /* Pods_SSETest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSETest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2A15C9CE2B9DC190FC2CB0 /* Pods-SSETest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSETest.debug.xcconfig"; path = "Target Support Files/Pods-SSETest/Pods-SSETest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0D333A1430DD811401C7C9 /* Pods_SSETest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0AFB69AB28353BE20067BBBC /* SSETest */,
 				0AFB69AA28353BE20067BBBC /* Products */,
+				6DEA62D741EC23BB1EA6AA80 /* Pods */,
+				51A102C77B07B05C23CA9BF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SSETest;
 			sourceTree = "<group>";
 		};
+		51A102C77B07B05C23CA9BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDFF3503CE38336D4C070C /* Pods_SSETest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DEA62D741EC23BB1EA6AA80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A15C9CE2B9DC190FC2CB0 /* Pods-SSETest.debug.xcconfig */,
+				17339C5E6A523A26E37852D6 /* Pods-SSETest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AFB69BD28353BE30067BBBC /* Build configuration list for PBXNativeTarget "SSETest" */;
 			buildPhases = (
+				B1553218EFE4275024A1982E /* [CP] Check Pods Manifest.lock */,
 				0AFB69A528353BE20067BBBC /* Sources */,
 				0AFB69A628353BE20067BBBC /* Frameworks */,
 				0AFB69A728353BE20067BBBC /* Resources */,
+				37F90AA8C72C392EC0E55D41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37F90AA8C72C392EC0E55D41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSETest/Pods-SSETest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSETest/Pods-SSETest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSETest/Pods-SSETest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1553218EFE4275024A1982E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSETest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AFB69A528353BE20067BBBC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		0AFB69BE28353BE30067BBBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2A15C9CE2B9DC190FC2CB0 /* Pods-SSETest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		0AFB69BF28353BE30067BBBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17339C5E6A523A26E37852D6 /* Pods-SSETest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
